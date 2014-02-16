@@ -2,13 +2,13 @@
 
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="System.Web.Script.Serialization" %>
-<%@ Import Namespace="DemoWebApp.Model" %>
+<%@ Import Namespace="DemoWebApp.Model2" %>
 
 <script runat="server">
 
     protected override void OnLoad(EventArgs args)
     {
-        var directory = new DirectoryInfo(@"C:\Temp\DemoWebApp\");
+        var directory = new DirectoryInfo(@"C:\Users\zkvdpl4\code\AutomatedTestingChallenge\Data Files\");
         var clientFileInfos = directory.GetFiles();
 
         var db = new ClientDataContext();
