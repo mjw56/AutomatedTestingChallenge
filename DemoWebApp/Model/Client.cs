@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace DemoWebApp.Model
+namespace DemoWebApp.Model2
 {
     public class Client
     {

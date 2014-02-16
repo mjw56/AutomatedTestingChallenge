@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace DemoWebApp.Model
+namespace DemoWebApp.Model2
 {
     public class Account
     {
