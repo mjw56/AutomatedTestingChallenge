@@ -1,0 +1,10 @@
+{
+	"Key": "2",
+	"Name": "Client #2",
+	"Address": "453 Test St., Testington, NJ 08615",
+	"CreatedOn": "4/16/2006",
+	"Accounts": [
+		{ "AccountNumber": "SVG7291913", "Type": "Savings", "Balance": 2210},
+		{ "AccountNumber": "CHK999FPSA223", "Type": "Checking", "Balance": 32902}
+	]
+}
