@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DemoWebApp.UnitTests
 {
     [Binding]
-    public class RenderUISteps
+    public class DisplayClientsSteps
     {
 
         private DemoWebAppPage demoPage;
