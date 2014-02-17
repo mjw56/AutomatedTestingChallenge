@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DemoWebApp.UnitTests
+namespace DemoWebApp.UnitTests.SpecFlow.Features.ClientDisplay
 {
     using TechTalk.SpecFlow;
     
@@ -19,19 +19,19 @@ namespace DemoWebApp.UnitTests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class DataDisplayedOnPageFeature
+    public partial class ClientDataDisplayedFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "DisplayClients.feature"
+#line 1 "SpecFlowFeature1.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Data Displayed on Page", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Client Data Displayed", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -46,9 +46,9 @@ namespace DemoWebApp.UnitTests
         public virtual void TestInitialize()
         {
             if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
-                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Data Displayed on Page")))
+                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Client Data Displayed")))
             {
-                DemoWebApp.UnitTests.DataDisplayedOnPageFeature.FeatureSetup(null);
+                DemoWebApp.UnitTests.SpecFlow.Features.ClientDisplay.ClientDataDisplayedFeature.FeatureSetup(null);
             }
         }
         
@@ -70,7 +70,7 @@ namespace DemoWebApp.UnitTests
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Display two clients")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Data Displayed on Page")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Client Data Displayed")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         public virtual void DisplayTwoClients()
         {
@@ -83,25 +83,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 6
  testRunner.When("I load the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
- testRunner.Then("two clients should be displayed on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Two Clients Each Have a Name")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Data Displayed on Page")]
-        public virtual void TwoClientsEachHaveAName()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Two Clients Each Have a Name", ((string[])(null)));
-#line 9
-this.ScenarioSetup(scenarioInfo);
-#line 10
- testRunner.Given("That I have two clients defined", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
- testRunner.When("I load the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
- testRunner.Then("the two clients should each have a name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("two clients should have names, addresses, and accounts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
