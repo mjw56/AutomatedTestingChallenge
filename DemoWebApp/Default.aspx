@@ -116,17 +116,16 @@
                 <h2><%= client.Name %></h2>
                 <p><span class="text-muted">(Client for <%= TimeSinceNow(client.CreatedOn) %>)</span></p>
                 <p><label>Address</label> <br/> <span><%= client.Address %></span> </p>
-                <p><label>Accounts</label> (<%=client.Accounts.Count %>)
-                    <ul>
-                    <% foreach(var account in client.Accounts) { %>
-                        <li>
-                            <strong><%=account.AccountNumber %>:</strong>
-                            <span>[<%= account.Type %>]</span>
-                            <span><%= account.Balance.ToString("C") %></span>
-                        </li>
-                    <% } %>
-                    </ul> 
-                </p>
+                <p><label>Accounts</label> (<%=client.Accounts.Count %>)</p>
+                <ul>
+                <% foreach(var account in client.Accounts) { %>
+                    <li>
+                        <strong><%=account.AccountNumber %>:</strong>
+                        <span>[<%= account.Type %>]</span>
+                        <span><%= account.Balance.ToString("C") %></span>
+                    </li>
+                <% } %>
+                </ul> 
             </div>
         <% } %>
         </div>
