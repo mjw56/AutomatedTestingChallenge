@@ -11,7 +11,6 @@ namespace DemoWebApp.UnitTests
     [Binding]
     public class ClientDataDisplayedSteps
     {
-
         private DemoWebAppPage demoPage;
         private IWebDriver driver;
 
