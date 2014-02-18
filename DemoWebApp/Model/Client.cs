@@ -17,6 +17,16 @@ namespace DemoWebApp.Model2
         {
             CreatedOn = DateTime.Now;
         }
+
+        public Client(long id, string key, string name, string address, List<Account> accounts, DateTime created)
+        {
+            this.Id = id;
+            this.Key = key;
+            this.Name = name;
+            this.Address = address;
+            this.Accounts = accounts;
+            this.CreatedOn = created;
+        }
     }
 
     public class ClientDataContext : DbContext
