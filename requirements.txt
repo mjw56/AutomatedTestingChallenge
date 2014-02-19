@@ -1,0 +1,24 @@
+DemoWebApp Requirements
+=======================
+
+Load Client and Account data, store this data into a backend database in order to display
+this data in HTML format.
+
+Implementation Details
+======================
+
+1) Client and Account data is loaded from data file and saved into a SQL Server database. 
+
+2) Client and Account data is displayed on the frontend in HTML format
+
+
+Client Object Data
+==================
+
+Fields: Id (long), Key (string), Name (string), Address (string), List<Accounts> (Accounts), Created Date (DateTime)
+
+
+Account Object Data
+===================
+
+Fields: AccountNumber (string), type (string), balance (decimal), lastupdate (DateTime)
