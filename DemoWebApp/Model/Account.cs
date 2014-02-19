@@ -15,5 +15,12 @@ namespace DemoWebApp.Model2
         {
             LastUpdate = DateTime.Now;
         }
+
+        public Account(string acctno, string type, decimal balance, DateTime lastupdate) {
+            this.AccountNumber = acctno;
+            this.Type = type;
+            this.Balance = balance;
+            this.LastUpdate = lastupdate;
+        }
     }
 }
